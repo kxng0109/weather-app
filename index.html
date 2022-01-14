@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2f96a3">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css"> -->
+	<script type="text/javascript" src="app.js" defer></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="location">
+		<div class="location-timezone-section">
+			<h1 class="location-timezone">Location</h1>
+			<span class="location-timezone-span">Country</span>
+		</div>
+		<!-- <p>Icon</p> -->
+		<i class="wi wi-day-sunny"></i>
+	</div>
+
+	<div class="temperature">
+		<div class="degree-section">
+			<h2 class="temperature-degree">--</h2>
+			<span class="degree">°C</span>
+		</div>
+		<div class="other-info">
+			<div id="feels-like-info">
+				<span>But it feels like:&nbsp;&nbsp;</span>
+				<p class="feels-like">--</p>
+				<span id="feels-like-unit">°C</span>
+			</div>
+			<div id="wind-speed-info">
+				<span>Wind speed: &nbsp;&nbsp;</span>
+				<p class="wind-speed">--</p>
+				<span id="wind-speed-unit">m/s</span>
+			</div>
+		</div>
+		<div class="temperature-description">Fetching Data</div>
+	</div>
+	<footer>Tip: Click/Tap on the weather info to change from metric to imperial and vice-versa</footer>
+</body>
+</html>

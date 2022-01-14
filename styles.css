@@ -1,0 +1,99 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', 'Helvetica', cursive;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+	font-family: sans-serif;
+	color: white;
+}
+
+.location, .temperature{
+	height: 40vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.location{
+	height: 10vh;
+}
+
+.temperature{
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.degree-section{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	height: 70%;
+}
+
+.temperature-degree{
+	font-weight: 600;
+	font-size: 45px;
+}
+
+.degree-section>span{
+	margin: 6px;
+	font-size: 20px;
+}
+
+.degree-section>h2{
+	font-style: 40px;
+}
+
+#feels-like-info, #wind-speed-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.other-info{
+	height: 8vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#feels-like-unit, #wind-speed-unit{
+	margin: 0 3px;
+}
+
+#feels-like-unit{
+	border-right: 2px solid white;
+	margin-right: 16px;
+	padding-right: 16px;
+}
+
+.other-info, #feels-like-info, #wind-speed-info, .temperature{
+	width: fit-content;
+}
+
+footer{
+	position: absolute;
+	bottom: 2%;
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+.temperature-description{
+	margin-top: 20px;
+}
+
+@media (max-width: 400px){
+	body{
+		padding: 0 20px;
+	}
+}
